@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 #include "main.h"
 
 /**
@@ -169,3 +172,4 @@ int print_rot13string(va_list types, char buffer[],
 	}
 	return (count);
 }
+>>>>>>> 0d48a64d86586a59214b30e5755fb55b225022dd
