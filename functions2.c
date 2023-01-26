@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_pointer - Prints the value of a pointer variable
+ *print_pointer - Prints the value of a pointer variable
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -22,7 +22,6 @@ int print_pointer(va_list types, char buffer[],
 
 	UNUSED(width);
 	UNUSED(size);
-
 	if (addrs == NULL)
 		return (write(1, "(nil)", 5));
 	buffer[BUFF_SIZE - 1] = '\0';
@@ -68,7 +67,6 @@ int print_non_printable(va_list types, char buffer[],
 	UNUSED(width);
 	UNUSED(precision);
 	UNUSED(size);
-
 	if (str == NULL)
 		return (write(1, "(null)", 6));
 	while (str[i] != '\0')
@@ -103,9 +101,7 @@ int print_reverse(va_list types, char buffer[],
 	UNUSED(flags);
 	UNUSED(width);
 	UNUSED(size);
-
 	str = va_arg(types, char *);
-
 	if (str == NULL)
 	{
 		UNUSED(precision);
@@ -134,7 +130,6 @@ int print_reverse(va_list types, char buffer[],
  */
 
 int print_rot13string(va_list types, char buffer[],
-
 	int flags, int width, int precision, int size)
 {
 	char x;
