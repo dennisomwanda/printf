@@ -36,8 +36,8 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 		else if (width)
 		{
 			--(*ind);
-			3bsHYHMj4xyKyfPHP1NfPMYGF4SG2M5DX3VN9eEPRWdd
-				--(*ind);
+			while (fmt[*ind] != ' ' && fmt[*ind] != '%')
+			--(*ind);
 			if (fmt[*ind] == ' ')
 				--(*ind);
 			return (1);
